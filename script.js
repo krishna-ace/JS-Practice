@@ -1,43 +1,21 @@
-// let arr  =  [1,2,3,6,4,5,9,8,7,];
-// let n = 5;
-
-// function a (arr , n){
-//     for (let i = 0; i < arr.length; i++){
-        
-//         if(arr[i]>n){
-//             console.log(arr[i]);
-//         }       
-//     }
-// }
-// a(arr,n);
-
-
-// let str = "abcdabcdefgggh";
-
-// function get(str){
-//     let ans = "";
-//     for(let i = 0; i < str.length; i++){
-//         let currChar = str[i];
-//         if(ans.indexOf(currChar) == -1){
-//             ans += currChar;
-//         }
-//     }
-//     return ans;
-// }
-// get(str);
+// Qs1.Write an arrow function named arrayAverage that accepts anarray 
+// of numbers and returns the average of those numbers.
+const averArray = (arr) => {
+    for (let i = 0; i < arr.length; i++){
+        let num = 0;
+        num += arr[i];
+        let count = 0;
+         count++;
+        return console.log(num/count);
+    }  
+};
+let arr = [2,2,2];
+console.log(averArray(arr));
 
 
-let country = ["Australia","Germany", "france", "United states of america"];
+// Qs2.Write an arrow function named isEven() that takes a single
+// number as argument and returns if it is even or not.
 
-function large (country){
-    let ansIdx = 0;
-    for(let i = 0; i < country.length; i++ ){
-        let ansLen = country[ansIdx].length;
-        let currLen = country[i].length;
-        if(currLen > ansLen){
-            ansIdx = i;
-        }
-    }
-    return country[ansIdx];
-}
-large(country);
+let n = 5;
+const isEven = (n) => n %2 == 0;
+console.log(isEven(n));
