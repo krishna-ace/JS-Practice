@@ -1,0 +1,16 @@
+function rateLimiter(fn, limit, interval) {
+  let calls = 0;
+
+  setInterval(() => {
+    calls = 0;
+  }, interval);
+
+  return (...args) => {
+    if (calls < limit) {
+      calls++;
+      fn(...args);
+    } else {
+      console.log("Rate limit exceeded");
+    }
+  };
+}
