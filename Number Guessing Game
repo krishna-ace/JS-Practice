@@ -4,5 +4,5 @@ let guess = 5; // change this number to guess
 if (guess === randomNumber) {
     console.log("Correct Guess! 🎉");
 } else {
-    console.log("Wrong Guess! The number was " + randomNumber);
+    console.log("Wrong Guess! The number was " + randomNumber );
 }
